@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pabie Pixel - Virtual Assistant Portfolio</title>
+    <title>Pabie Sphere - Virtual Assistant Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Pabie Pixel</h1>
+        <h1>Pabie Sphere</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,14 +22,18 @@
         </nav>
     </header>
     
-    <section id="home">
-        <h2>Welcome to Pabie Pixel</h2>
-        <p>Your go-to Virtual Assistant for Marketing and Creative tasks.</p>
-        <button onclick="location.href='#contact'">Work With Me</button>
+    <section id="home" class="hero">
+        <img src="https://source.unsplash.com/1600x900/?workspace,technology" alt="Workspace" class="hero-image">
+        <div class="hero-text">
+            <h2>Welcome to Pabie Sphere</h2>
+            <p>Your go-to Virtual Assistant for Marketing and Creative tasks.</p>
+            <button onclick="location.href='#contact'">Work With Me</button>
+        </div>
     </section>
     
     <section id="about">
         <h2>About Me</h2>
+        <img src="https://source.unsplash.com/400x400/?person,portrait" alt="Paballo Boikanyo" class="profile-image">
         <p>Hi, I'm Paballo Boikanyo, an entry-level Virtual Assistant specializing in Marketing and Creative VA tasks.</p>
     </section>
     
@@ -46,6 +50,7 @@
     
     <section id="portfolio">
         <h2>Portfolio</h2>
+        <img src="https://source.unsplash.com/600x400/?marketing,design" alt="Marketing Portfolio">
         <p>Showcasing past projects (Coming Soon).</p>
     </section>
     
@@ -62,11 +67,12 @@
             <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <p>Email: pabiepixel@example.com</p>
+        <p>Email: paballoboikanyo301@gmail@.com</p>
     </section>
     
     <footer>
-        <p>&copy; 2025 Pabie Pixel. All Rights Reserved.</p>
+        <p>&copy; 2025 Pabie Sphere. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
+
