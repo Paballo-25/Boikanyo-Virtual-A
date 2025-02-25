@@ -1,0 +1,38 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Fun welcome message animation
+    const heroText = document.querySelector(".hero-text h2");
+    heroText.style.opacity = 0;
+    heroText.style.transform = "translateY(-20px)";
+    setTimeout(() => {
+        heroText.style.transition = "all 1s ease-out";
+        heroText.style.opacity = 1;
+        heroText.style.transform = "translateY(0)";
+    }, 500);
+
+    // Button hover effect
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(button => {
+        button.addEventListener("mouseover", () => {
+            button.style.transform = "scale(1.1)";
+        });
+        button.addEventListener("mouseleave", () => {
+            button.style.transform = "scale(1)";
+        });
+    });
+
+    // Interactive contact form
+    const contactForm = document.getElementById("contact-form");
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Thank you for reaching out! I'll get back to you soon.");
+        contactForm.reset();
+    });
+
+    // Fun rotating logo effect
+    const header = document.querySelector("header h1");
+    header.addEventListener("click", () => {
+        header.style.transition = "transform 0.5s ease-in-out";
+        header.style.transform = "rotate(360deg)";
+        setTimeout(() => header.style.transform = "rotate(0deg)", 500);
+    });
+});
